@@ -1,0 +1,275 @@
+h1{
+    text-align: center;
+    color: rgb(251, 251, 251);
+}
+ 
+h3{
+    text-align: center;
+    font-size: x-large;
+    color: rgb(244, 244, 244); 
+}
+p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: x-large;
+    font-family: Helvetica, sans-serif;
+
+}
+h2{
+    text-align: center;
+    font-size: x-large;
+    color: rgb(254, 254, 254);
+
+}
+
+
+
+*{ margin: 0px;  padding: 0px; }
+.limpiar{  clear:both; }
+
+#Seccion{
+    float:left;  width: 100%; background-color: #b5985a;
+    min-height:600px;
+}
+
+.Articulo{
+    color:#fbfbfb; margin-top: 15px; margin-bottom: 15px;
+}
+
+aside{
+    float:center;    width: 20%;
+    background-color: rgb(201, 86, 201);
+    min-height: 600px;}
+
+footer{ background-color: maroon;  color:rgb(55, 9, 139);
+        text-align: center;  height: 50px;  line-height: 50px;
+        margin-top: 0%;  margin-bottom: 0%;  padding: 0%;
+        }
+    
+        .boton3{
+          
+            text-decoration: none;
+            display:inline-block;
+            width:60%;
+            padding:20px;
+            background: rgb(12, 143, 12);
+            width:40%;
+            text-align: center;
+            color:white;
+            font-size: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0px 0px 20px 5px rgb(21, 248, 0);
+        
+           }
+        
+          .boton3:hover{
+        
+            box-shadow: 0px 0px 20px 5px rgb(8, 159, 252);
+            
+          }
+         
+        
+        @keyframes texto {
+0%{
+  margin-left: 100%;
+  width: 300%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:smaller;
+  color:rgb(0, 0, 0)
+}
+
+50%{
+  margin-left: 50%;
+  width: 200%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:small;
+  color:rgb(131, 131, 131)
+}
+
+100%{
+  margin-left: 0%;
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  color:rgb(0, 0, 0);
+}
+        }
+h2{
+    color: rgb(255, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a {
+    text-decoration:none;
+    color:#FFF;
+  }
+  .rainbow-button {
+    width:calc(20vw + 6px);
+    height:calc(8vw + 6px);
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-transform:uppercase;
+    font-size: larger;
+    font-weight:bold;
+  }
+  .rainbow-button:after {
+    content:attr(alt);
+    width:20vw;
+    height:8vw;
+    background-color:#191919;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .rainbow-button:hover {
+    animation:slidebg 2s linear infinite;
+  }
+  
+  @keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
+  body {
+    background-color: #0c0c0c;
+    animation: cambiacolordefondo linear 3;
+    animation-duration: 20s;
+  }
+ 
+  h1{
+    color:#ffee00;
+    text-align: center;
+    margin-top: 328px; 
+    animation: cambia_color_h1 linear 3;
+    animation-duration: 20s;   
+    
+  }
+
+  h2{
+       text-align: center;
+       color:aliceblue;
+  }
+
+  button{
+    width: 100px;
+    height: 50px;
+    background-color: #ffee00;
+    color:navy;
+  }
+
+         
+  /* Crear la nieve */
+  .snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #e9efeb;
+    border-radius: 50%;
+    animation: snowfall linear infinite,
+               colordenieve 20s infinite;
+    transform-origin: center;
+    
+    
+  }
+
+  /* Animación de caída de nieve */
+  @keyframes snowfall {
+    0% {
+      transform: translateY(-100px) rotate(0deg);
+    }
+    100% {
+      transform: translateY(1200px) rotate(360deg);
+    }
+  }
+
+/* Animación de cambio de color de la pagina */
+@keyframes cambiacolordefondo {
+    0%{
+        background-color: rgb(207, 164, 20);
+    }
+
+    25%{
+        background-color: rgb(246, 171, 10);
+    }
+
+    50%{
+        background-color: rgb(249, 142, 1);
+    }
+
+    75%{
+        background-color: rgb(174, 133, 19);
+    }
+
+    100%{
+        background-color: rgb(90, 50, 4);
+    }
+    
+}
+
+@keyframes cambia_color_h1 {
+   0%{
+        color: rgb(255, 204, 0);
+    }
+
+    25%{
+        color: purple;
+    }
+
+    50%{
+        color: chartreuse;
+    }
+
+    75%{
+        color: rgb(12, 3, 49);
+    }
+
+    100%{
+        color: rgb(8, 8, 138);
+    }
+    
+}
+
+@keyframes colordenieve {
+    
+    0%{
+        background-color: rgb(253, 5, 5);
+    }
+    
+    25%{
+        background-color: rgba(255, 255, 255, 0.898);
+    }
+
+    50%{
+        background-color: rgb(5, 108, 242);
+    }
+
+    75%{
+        background-color: rgba(7, 6, 5, 0);
+    }
+
+    100%{
+        background-color: rgb(255, 8, 8);
+    }
+}
+
+
+
+.fuentes{
+  font-size: 48px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fa-brands{
+  color:navy;
+}
+
+.imagenes{
+  display: flex;
+  justify-content: space-evenly;
+}

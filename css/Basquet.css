@@ -1,0 +1,122 @@
+ body {
+        background-color: #0c0c0c;
+        animation: cambiacolordefondo linear 3;
+        animation-duration: 20s;
+      }
+     
+      h1{
+        color:#ffee00;
+        text-align: center;
+        margin-top: 328px; 
+        animation: cambia_color_h1 linear 3;
+        animation-duration: 20s;   
+        
+      }
+
+      h2{
+           text-align: center;
+           color:aliceblue;
+      }
+
+      button{
+        width: 100px;
+        height: 50px;
+        background-color: #ffee00;
+        color:navy;
+      }
+
+             
+      /* Crear la nieve */
+      .snowflake {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #00ff6a;
+        border-radius: 50%;
+        animation: snowfall linear infinite,
+                   colordenieve 20s infinite;
+        transform-origin: center;
+        
+        
+      }
+
+      /* Animación de caída de nieve */
+      @keyframes snowfall {
+        0% {
+          transform: translateY(-100px) rotate(0deg);
+        }
+        100% {
+          transform: translateY(1200px) rotate(360deg);
+        }
+      }
+
+    /* Animación de cambio de color de la pagina */
+    @keyframes cambiacolordefondo {
+        0%{
+            background-color: rgb(8, 8, 138);
+        }
+
+        25%{
+            background-color: aqua;
+        }
+
+        50%{
+            background-color: purple;
+        }
+
+        75%{
+            background-color: chartreuse;
+        }
+
+        100%{
+            background-color: rgb(12, 3, 49);
+        }
+        
+    }
+    
+    @keyframes cambia_color_h1 {
+       0%{
+            color: rgb(255, 204, 0);
+        }
+
+        25%{
+            color: purple;
+        }
+
+        50%{
+            color: chartreuse;
+        }
+
+        75%{
+            color: rgb(12, 3, 49);
+        }
+
+        100%{
+            color: rgb(8, 8, 138);
+        }
+        
+    }
+
+    @keyframes colordenieve {
+        
+        0%{
+            background-color: yellow;
+        }
+        
+        25%{
+            background-color: white;
+        }
+
+        50%{
+            background-color: pink;
+        }
+
+        75%{
+            background-color: olivedrab;
+        }
+
+        100%{
+            background-color: rgb(123, 8, 138);
+        }
+    }
+    

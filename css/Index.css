@@ -1,0 +1,107 @@
+body{
+    background-color: rgb(110, 98, 98);
+    color: rgb(255, 255, 255);
+    height: 800px;
+    background-image: url("https://i.pinimg.com/originals/d9/6c/e3/d96ce38f79374bb007d39399da661e56.png");
+    background-size: cover;
+    background-size: 25rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+header{
+    background-color: rgb(241, 100, 19); color:rgb(126, 165, 202);
+    text-align: center;
+    width: 100%; height: 100px;  margin: 2px;
+    line-height: 100px;  font-family:fantasy;
+    border-bottom: 3px dashed rgba(228, 110, 13, 0.664);
+}
+
+h1{
+    color: rgb(255, 255, 255);
+}
+
+h3{
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    color: cornflowerblue;
+}
+
+p{
+animation-name: texto;
+animation-duration: 25s;
+color: white;
+}
+
+@keyframes texto {
+0%{
+  margin-left: 100%;
+  width: 300%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:smaller;
+  color:rgb(255, 146, 4)
+}
+
+50%{
+  margin-left: 50%;
+  width: 200%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:small;
+  color:rgb(131, 131, 131)
+}
+
+100%{
+  margin-left: 0%;
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  color:rgb(0, 0, 0);
+}
+}
+h2{
+    color: rgb(250, 250, 250);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a {
+    text-decoration:none;
+    color:#FFF;
+  }
+  .rainbow-button {
+    width:calc(20vw + 6px);
+    height:calc(8vw + 6px);
+    background-image: linear-gradient(90deg, #f1b612 0%, #FFCF00 49%, #FC4F4F 80%, #fffb00 100%);
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-transform:uppercase;
+    font-size: larger;
+    font-weight:bold;
+  }
+  .rainbow-button:after {
+    content:attr(alt);
+    width:20vw;
+    height:8vw;
+    background-color:#191919;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .rainbow-button:hover {
+    animation:slidebg 2s linear infinite;
+  }
+  
+  @keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
+
+  
+.fuentes{
+  font-size: 48px;
+  display: flex;
+  justify-content: space-evenly;
+}
